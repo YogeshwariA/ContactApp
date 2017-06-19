@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>AddContact</title>
+</head>
+<body>
+	<h1 style="align-text: center">Add Contact</h1>
+	<form action="/addContact" method="post">
+
+		<table>
+			<tr>
+				<td><label>FirstName:</label></td>
+				<td><input type="text" name="firstName" id="firstName"></td>
+			</tr>
+
+			<tr>
+				<td><label>LastName:</label></td>
+				<td><input type="text" name="lastName" id="lastName"></td>
+			</tr>
+
+			<tr>
+				<td><label>PhoneNumber:</label></td>
+				<td><input type="text" name="phoneNumber" id="phoneNumber"></td>
+				<td><select name="category">
+						<option value="HOME">Home</option>
+						<option value="OFFICE">Office</option>
+						<option value="MOBILE">Mobile</option>
+						<option value="OTHERS">Others</option>
+
+				</select></td>
+			</tr>
+
+			<tr>
+				<td><label>Street:</label></td>
+				<td><input type="text" name="street" id="street"></td>
+			</tr>
+
+			<tr>
+				<td><label>State:</label></td>
+				<td><input type="text" name="state" id="state"></td>
+			</tr>
+
+			<tr>
+				<td><label>City:</label></td>
+				<td><input type="text" name="city" id="city"></td>
+			</tr>
+
+			<tr>
+				<td><label>ZipCode:</label></td>
+				<td><input type="text" name="zipCode" id="zipCode"></td>
+			</tr>
+
+			<tr>
+				<td><label>DateOfBirth:</label></td>
+				<td><input type="date" name="birthDay" id="birthDay"></td>
+			</tr>
+
+			<tr>
+				<td><label>Email-Id:</label></td>
+				<td><input type="text" name="emailId" id="emailId"></td>
+			</tr>
+
+			<tr>
+				<td><input type="submit" name="add" id="add" value="Add"></td>
+
+				<td><input type="submit" name="cancel" id="cancel"
+					value="Cancel"></td>
+			</tr>
+
+		</table>
+	</form>
+</body>
+</html>

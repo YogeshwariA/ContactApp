@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+	<servlet>
+		<servlet-name>ContactAppServlet</servlet-name>
+		<servlet-class>com.full.contact.ContactAppServlet</servlet-class>
+		<!-- <load-on-startup>jgh</load-on-startup> -->
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ContactAppServlet</servlet-name>
+		<url-pattern>/home</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddContactServlet</servlet-name>
+		<servlet-class>com.full.contact.AddContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddContactServlet</servlet-name>
+		<url-pattern>/goToAdd</url-pattern>
+		<url-pattern>/addContact</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UpdateContactServlet</servlet-name>
+		<servlet-class>com.full.contact.UpdateContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UpdateContactServlet</servlet-name>
+		<url-pattern>/goToUpdate</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteContactServlet</servlet-name>
+		<servlet-class>com.full.contact.DeleteContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteContactServlet</servlet-name>
+		<url-pattern>/goToDelete</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SearchContactServlet</servlet-name>
+		<servlet-class>com.full.contact.SearchContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SearchContactServlet</servlet-name>
+		<url-pattern>/goToSearch</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ReadContactServlet</servlet-name>
+		<servlet-class>com.full.contact.ReadContactServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ReadContactServlet</servlet-name>
+		<url-pattern>/goToRead</url-pattern>
+	</servlet-mapping>
+
+	<!-- <welcome-file-list> <welcome-file>index.html</welcome-file> </welcome-file-list> -->
+</web-app>
